@@ -1,8 +1,11 @@
 import React from 'react'
+import RegForm from './components/RegForm/RegForm'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <RegForm/>
+    </div>
   )
 }
 
