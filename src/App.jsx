@@ -1,8 +1,11 @@
 import React from 'react'
+import EnhancedComponent from './components/EnhancedComponent'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <EnhancedComponent/>
+    </div>
   )
 }
 
