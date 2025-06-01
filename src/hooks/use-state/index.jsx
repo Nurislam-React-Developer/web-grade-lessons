@@ -1,17 +1,18 @@
-import React from 'react'
+// # 📚 Объяснение React Хуков
+
+// ## 1. useState (use-state.jsx)
+// ````javascript
+// filepath: /src/hooks/use-state.jsx
 import { useState } from 'react';
 
 const StateExample = () => {
-  const [counter, setCounter] = useState(0)
+	const [count, setCount] = useState(0); // Создаем состояние со значением 0
 
-  return (
-    <div>
-      <p>count:{counter}</p>
-      <button onClick={() => setCounter(counter + 1)}>Increment</button>
-      <button onClick={() => setCounter(counter - 1)}>Decrement</button>
-      <button onClick={() => setCounter(0)}>Reset</button>
-    </div>
-  )
-}
-
-export default StateExample;
+	return (
+		<div>
+			<h1>Значение счетчика: {count}</h1>
+			<button onClick={() => setCount((prev) => prev + 1)}>Увеличить</button>
+			<button onClick={() => setCount((prev) => prev - 1)}>Уменьшить</button>
+		</div>
+	);
+};
