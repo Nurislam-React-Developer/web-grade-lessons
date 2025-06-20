@@ -12,6 +12,7 @@ const AboutPage = () => {
 				<Button>Click Me</Button>
 				<Link href={'/'} className='w-[120px] h-[20px] bg-emerald-500'>
 					На главную страницу
+          
 				</Link>
 			</div>
 		</div>
