@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const DashBoardPage = () => {
@@ -29,6 +30,7 @@ const DashBoardPage = () => {
 				<div className='p-4 bg-green-500 rounded'>
 					<p className=''>Ширина окна: {windowWidth}</p>
 				</div>
+        <Link href={'/'} className='w-[120px] h-[20px] bg-emerald-500'>На главную страницу</Link>
 			</div>
 		</div>
 	);
